@@ -1,0 +1,660 @@
+:root {
+  --primary-color: #00985b;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+}
+
+/* Navbar */
+
+.navbar {
+  z-index: 3;
+}
+
+* {
+  z-index: 2;
+}
+
+.accsent-img,
+.hero-img {
+  z-index: 1;
+}
+
+.bg-transparent {
+  transition: all ease-in-out 0.4s;
+}
+
+.nav-bg {
+  background-color: var(--primary-color);
+  /* opacity: 90%; */
+  transition: all ease-in-out 0.4s;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav-link {
+  font-size: 16px;
+}
+
+.nav-link.active {
+  font-weight: 700;
+}
+
+.btn-masuk {
+  width: 133px;
+  height: 40px;
+  background-color: #ffffff;
+  color: var(--primary-color);
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.btn-daftar {
+  width: 133px;
+  height: 40px;
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: 400;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+}
+
+/* Hero Section*/
+
+#hero {
+  background: linear-gradient(to bottom right, var(--primary-color), #000000);
+  height: 100vh;
+}
+
+.btn-temukan {
+  width: 255px;
+  height: 55px;
+  background-color: #ffffff;
+  color: var(--primary-color);
+  font-weight: 400;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+}
+
+/* Layanan Section */
+
+#layanan {
+  padding: 100px 0;
+}
+
+.title {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.card-layanan {
+  width: 100%;
+  height: 313px;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 7px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in;
+}
+
+.card-layanan h3 {
+  color: var(--primary-color);
+  transition: all 0.2s ease-in;
+}
+
+.circle-icon {
+  width: 83px;
+  height: 83px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  transition: all 0.2s ease-in;
+}
+
+/* Card Layanan Hover State */
+
+.card-layanan:hover {
+  background: linear-gradient(to bottom right, var(--primary-color), #00da83, #000000);
+  color: #ffffff;
+  transition: all 0.2s ease-in;
+}
+
+.card-layanan:hover h3 {
+  color: #ffffff;
+  transition: all 0.2s ease-in;
+}
+
+.card-layanan:hover .circle-icon {
+  background-color: #ffffff;
+  transition: all 0.2s ease-in;
+}
+
+/* Search Section */
+#search {
+  height: 100vh;
+  background-image: url("/assets/img/search-background.png");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  padding: 100px 0;
+}
+
+.nav-tabs {
+  border: none;
+}
+
+.nav-tabs .nav-link {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000000;
+  border-radius: 0;
+  border: none;
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--primary-color);
+}
+
+.nav-tabs .nav-link:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+.nav-tabs .nav-link:last-child {
+  border-radius: 0 10px 0 0;
+}
+
+.input-group {
+  font-size: 18px;
+}
+
+.input-group input {
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+}
+
+.input-group input::placeholder {
+  color: var(--primary-color);
+}
+
+.input-group input:focus {
+  box-shadow: none;
+  color: var(--primary-color);
+}
+
+.btn-tipe-rumah,
+.btn-range-harga {
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 0 0 0 10px;
+  color: var(--primary-color);
+}
+
+.dropdown-menu .dropdown-item {
+  color: var(--primary-color);
+}
+
+.btn-cari {
+  width: 130px;
+  background-color: var(--primary-color);
+  font-size: 32px;
+  color: #ffffff;
+  border: none;
+  border-radius: 0 10px 10px 0;
+}
+
+/* Rekomendasi Section */
+
+#rekomendasi {
+  padding: 100px 0;
+}
+
+.card {
+  height: 450px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.card-body h4 {
+  color: #000000;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.card-body p {
+  color: #000000;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.sewa,
+.beli {
+  margin-top: -10px;
+  width: 50px;
+  height: 24px;
+  border-radius: 5px;
+  margin-right: 7px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Card Hover State */
+
+.card:hover {
+  background: linear-gradient(to bottom right, var(--primary-color), #00da83, rgba(0, 0, 0, 0.9));
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover .card-body h4,
+.card:hover .card-body p {
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover .sewa {
+  background-color: #00b0ff;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover .beli {
+  background-color: #ffd700;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-fasilitas {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 10px;
+  background-color: #ffffff;
+}
+
+.card-fasilitas span {
+  margin-top: 14px;
+}
+
+.card-fasilitas p {
+  font-size: 14px;
+}
+
+/* Fitur Section */
+#fitur {
+  padding: 0 0 100px 0;
+}
+
+.btn-fitur {
+  width: 180px;
+  height: 50px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+#carousel-row {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.card-fitur {
+  width: 342px;
+  height: 503px;
+  border-radius: 10px;
+}
+
+.card-fitur img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+}
+
+.overlay:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  color: #ffffff;
+}
+
+.overlay h5 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.overlay p {
+  font-size: 16px;
+}
+
+.overlay h6 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.btn-lihat {
+  width: 180px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.btn-arrow-left,
+.btn-arrow-right {
+  width: 55px;
+  height: 55px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0 -1.75rem;
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+/* Contact Section */
+#contact {
+  background-image: url("/assets/img/contact-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+#contact h3 {
+  color: #ffffff;
+}
+
+.kontak {
+  color: #ffffff;
+}
+
+.form-pertanyaan {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.form-pertanyaan h2 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.form-pertanyaan .form-control {
+  height: 65px !important;
+  background-color: #9f9f9f;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.form-pertanyaan .form-floating label {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.form-pertanyaan .form-control:focus + label {
+  color: #000000;
+}
+
+.form-pertanyaan button {
+  width: 100%;
+  height: 65px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/* Footer */
+#footer {
+  background-color: #000000;
+  color: #ffffff;
+  height: 25vh;
+}
+
+#footer .brand a {
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: end;
+}
+
+#footer ul li a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* Media Querry */
+/* Small Desktop */
+@media screen and (max-width: 992px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .navbar-brand {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .btn-daftar,
+  .btn-masuk {
+    display: block;
+    margin: 0.5rem auto;
+  }
+
+  .btn-masuk {
+    width: 100%;
+  }
+
+  .hero-tagline {
+    width: 75%;
+  }
+
+  .hero-tagline h1 {
+    line-height: 52px;
+  }
+
+  .hero-img {
+    width: 75%;
+    height: auto !important;
+  }
+
+  .btn-tipe-rumah,
+  .btn-range-harga {
+    width: 120px;
+    font-size: 14px;
+  }
+
+  .input-group input::placeholder {
+    font-size: 14px;
+  }
+
+  .btn-cari {
+    width: 100px;
+    font-size: 24px;
+  }
+
+  .form-pertanyaan {
+    padding: 20px;
+  }
+
+  .form-pertanyaan .form-control {
+    height: 55px !important;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .form-pertanyaan .form-floating label {
+    color: #ffffff;
+    font-size: 16px;
+  }
+
+  .form-pertanyaan button {
+    height: 55px;
+    font-size: 20px;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 576px) {
+  .title {
+    font-size: 34px;
+  }
+
+  .card-layanan {
+    margin: 15px 0;
+  }
+
+  #search h2 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+
+  .btn-tipe-rumah,
+  .btn-range-harga {
+    height: 60px;
+    border-radius: 0;
+    width: 50%;
+  }
+
+  .btn-range-harga {
+    border-radius: 0 10px 0 0 !important;
+  }
+
+  .input-group input {
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-left: 0 !important;
+    border-radius: 0 0 0 10px !important;
+  }
+
+  .btn-fitur {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .card-fitur {
+    width: 300px;
+  }
+
+  .card-fitur img {
+    width: 300px;
+    height: 100%;
+  }
+
+  .btn-arrow-left,
+  .btn-arrow-right {
+    margin: 0 -0.5rem;
+    width: 45px;
+    height: 45px;
+  }
+
+  .overlay h5 {
+    font-size: 30px;
+  }
+
+  .overlay p {
+    font-size: 14px;
+  }
+
+  .overlay h6 {
+    font-size: 20px;
+  }
+
+  .btn-lihat {
+    font-size: 16px;
+  }
+
+  #footer {
+    height: 30vh;
+  }
+
+  #footer .brand {
+    text-align: center;
+  }
+
+  #footer ul {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  #footer ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  #footer ul li a {
+    margin-right: 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+  }
+}
+
+/* Smart Phone */
+@media screen and (max-width: 350px) {
+  #search h2 {
+    font-size: 36px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .card-fitur {
+    width: 250px;
+  }
+
+  .card-fitur img {
+    width: 250px;
+    height: 100%;
+  }
+}
