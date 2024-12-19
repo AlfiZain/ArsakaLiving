@@ -139,7 +139,7 @@ body {
 /* Search Section */
 #search {
   height: 100vh;
-  background-image: url("/assets/img/search-background.png");
+  background-image: url("../assets/img/search-background.png");
   background-repeat: no-repeat;
   object-fit: cover;
   padding: 100px 0;
@@ -382,7 +382,7 @@ body {
 
 /* Contact Section */
 #contact {
-  background-image: url("/assets/img/contact-background.png");
+  background-image: url("../assets/img/contact-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
