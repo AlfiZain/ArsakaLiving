@@ -458,13 +458,18 @@ body {
   display: flex;
   list-style: none;
   justify-content: end;
+  margin-bottom: 0;
 }
 
 #footer ul li a {
   margin-right: 1rem;
   text-decoration: none;
   color: #ffffff;
-  font-weight: 700;
+}
+
+.copyright {
+  font-size: 14px;
+  margin: 16px 0 0 0;
 }
 
 /* Media Querry */
@@ -614,7 +619,7 @@ body {
   }
 
   #footer {
-    height: 30vh;
+    height: 35vh;
   }
 
   #footer .brand {
@@ -632,10 +637,12 @@ body {
   }
 
   #footer ul li a {
+    font-size: 14px;
     margin-right: 0;
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 700;
+  }
+
+  .copyright {
+    margin: 0;
   }
 }
 

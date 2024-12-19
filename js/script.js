@@ -32,7 +32,7 @@ const btnLeft = document.getElementById("btn-left");
 const btnRight = document.getElementById("btn-right");
 
 let scrollPosition = 0; // Posisi scroll saat ini
-const cardWidth = document.querySelector(".card-fitur").offsetWidth + 16; // Lebar card + gap
+const cardWidth = document.querySelector(".card-fitur").offsetWidth + 14; // Lebar card + gap
 const totalCards = document.querySelectorAll(".card-fitur").length;
 const visibleCards = Math.floor(document.querySelector(".carousel-wrapper").offsetWidth / cardWidth);
 const maxScroll = (totalCards - visibleCards) * cardWidth;
