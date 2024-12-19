@@ -550,6 +550,16 @@ body {
 
 /* Tablet */
 @media screen and (max-width: 576px) {
+  .hero-tagline {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero-tagline p {
+    width: 100% !important;
+  }
+
   .title {
     font-size: 34px;
   }
@@ -647,13 +657,22 @@ body {
 }
 
 /* Smart Phone */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 375px) {
   #search h2 {
     font-size: 36px;
   }
 
   .title {
     font-size: 30px;
+  }
+
+  .btn-fitur {
+    font-size: 14px;
+  }
+
+  .btn-fitur svg {
+    width: 20px;
+    height: 20px;
   }
 
   .card-fitur {
